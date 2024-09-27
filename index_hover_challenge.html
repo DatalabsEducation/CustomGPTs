@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible=IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Challenge</title>
+    <link rel="stylesheet" href="styles_hover_challenge.css">
+</head>
+<body>
+    <header>
+        <h1>Hover Challenge</h1>
+    </header>
+
+    <main>
+        <button id="instructions-button" class="left-button">Οδηγίες</button>
+        <div id="instructions" class="hidden">
+            <h2>Οδηγίες για το Hover Challenge</h2>
+            <p>Στόχος: Κάνε hover στα σωστά πλακίδια χωρίς λάθος.</p>
+            <p>Σενάριο: Το παιχνίδι επιλέγει ένα σενάριο (περιττές, άρτιες θέσεις ή πρώτοι αριθμοί).</p>
+            <p>Χρώμα: Τα σωστά πλακίδια γίνονται πράσινα όταν κάνεις hover.</p>
+            <p>Λάθος: Αν κάνεις λάθος, εμφανίζεται μήνυμα αποτυχίας και οι σωστές θέσεις.</p>
+            <p>Επανεκκίνηση: Πάτησε "Ξαναπαίξε" για να ξεκινήσεις πάλι.</p>
+            <p>Καλή επιτυχία!</p>
+        </div>
+
+        <section class="hover-challenge">
+            <div id="scenario-display">Επιλεγμένο Σενάριο: </div>
+            <div id="counter">Hover: 0/6</div>
+            <div class="grid-container"></div>
+            <div class="button-container">
+                <button id="retry-button">Ξαναπαίξε</button>
+            </div>
+        </section>
+
+        <div id="message" class="hidden">
+            <h2>Αποτυχία!</h2>
+            <p>Έκανες λάθος. Δες τις σωστές θέσεις.</p>
+        </div>
+
+        <div id="congrats-message" class="hidden">
+            <h2>Συγχαρητήρια!</h2>
+            <p>Τα κατάφερες!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Hover Challenge. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+    </footer>
+
+    <script src="script_hover_challenge.js"></script>
+</body>
+</html>
